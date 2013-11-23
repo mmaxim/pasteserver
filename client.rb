@@ -33,7 +33,7 @@ while true
     if serv_paste != lastpaste
         puts "New paste buffer from server: setting: " + serv_paste
         stdin, stdout, stderr = Open3.popen3(paste_cmd)
-        stdin.puts(serv_paste)
+        stdin.print(serv_paste)
         stdin.close()
         lastpaste = serv_paste
     end
