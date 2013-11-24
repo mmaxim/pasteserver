@@ -5,10 +5,13 @@ Right now it only support X11 and OSX.
 
 ### Usage
 
-#### X11 ####
+#### Server ####
+    ./start_server
+
+#### X11 Client ####
     ./start_x11
 
-#### OSX ####
+#### OSX Client ####
     ./start_osx
 
 ##### You can also query the server for history #####
