@@ -3,14 +3,15 @@ require 'net/http'
 require 'open3'
 require 'json'
 
-paste_cmd = ARGV[0]
-copy_cmd = ARGV[1]
+paste_cmd = ARGV[1]
+copy_cmd = ARGV[2]
+server_loc = ARGV[0]
 
 puts "Get buffer: " + copy_cmd
 puts "Put buffer: " + paste_cmd 
 
-set_uri = URI.parse('http://localhost:4567/paste')
-get_uri = URI.parse('http://localhost:4567/paste')
+set_uri = URI.parse("http://#{server_loc}:4567/paste")
+get_uri = URI.parse("http://#{server_loc}:4567/paste")
 lastpaste = `#{copy_cmd}`
 
 while true

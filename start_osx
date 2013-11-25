@@ -1,2 +1,2 @@
-#!/bin/sh
-ruby client.rb pbcopy pbpaste
+#!/bin/bash
+ruby client.rb $1 pbcopy pbpaste

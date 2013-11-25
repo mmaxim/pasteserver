@@ -1,2 +1,2 @@
-#!/bin/sh
-ruby client.rb 'xclip -i' 'xclip -o'
+#!/bin/bash
+ruby client.rb $1 'xclip -i' 'xclip -o'
