@@ -29,6 +29,8 @@ class PasteServer < Sinatra::Base
         JSON.generate({:result => @@history}) 
     end
 
+    set :bind, '0.0.0.0'
+
     run! if app_file == $0
 
 end
