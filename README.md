@@ -1,7 +1,7 @@
 # PasteServer 
 
 An extremely simple client/server setup for sharing a clipboard amongst different systems. 
-Right now it only support X11 and OSX.
+Right now it only supports X11 and OSX.
 
 ### Usage
 
