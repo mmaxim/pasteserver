@@ -9,10 +9,10 @@ Right now it only supports X11 and OSX.
     ./start_server
 
 #### X11 Client ####
-    ./start_x11
+    ./start_x11 <server>
 
 #### OSX Client ####
-    ./start_osx
+    ./start_osx <server>
 
 ##### You can also query the server for history #####
-    curl localhost:4567/history
+    curl <server>:4567/history
